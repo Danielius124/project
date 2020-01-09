@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F8E6E0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RegisterCompanyController">
+   <children>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Label layoutX="137.0" layoutY="97.0" text="Enter your login" />
+      <Label layoutX="370.0" layoutY="97.0" text="Enter your password" textFill="RED" />
+      <Label layoutX="141.0" layoutY="192.0" text="Enter your title" />
+      <PasswordField fx:id="registerPassword" alignment="TOP_CENTER" layoutX="350.0" layoutY="72.0" promptText="Password" />
+      <TextField fx:id="registerLogin" alignment="TOP_CENTER" layoutX="105.0" layoutY="72.0" promptText="Login" />
+      <TextField fx:id="registerTitle" alignment="TOP_CENTER" layoutX="105.0" layoutY="167.0" promptText="Title" />
+      <Label layoutX="188.0" layoutY="33.0" text="Register as a company!" textFill="#865252">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerButton" layoutX="370.0" layoutY="167.0" mnemonicParsing="false" onAction="#registerCompany" prefHeight="25.0" prefWidth="109.0" text="Register" textFill="#ee0000" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="226.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

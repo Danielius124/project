@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="title" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F8E6E0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CreateNewProjectController">
+   <children>
+      <Text layoutX="257.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert your new project title:" wrappingWidth="212.13671875" />
+      <Button fx:id="confirmButton" layoutX="438.0" layoutY="319.0" mnemonicParsing="false" onAction="#createProject" text="Create new Project" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="Go back" />
+      <ImageView fitHeight="155.0" fitWidth="315.0" layoutX="14.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@project.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="173.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create new project!!!!">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="projectTitle" layoutX="411.0" layoutY="188.0" />
+   </children>
+</AnchorPane>
